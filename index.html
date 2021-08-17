@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+    <title>Tocotoco</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+                <div class="header__nav">
+                    <div class="header__menu">
+                        <a href="https://tocotocotea.com" class="header__menu-logo">
+                            <img src="./assets/img/toco-logo.png" class="header__logo-img"></img>
+                        </a>
+                        <ul class="header__list">
+                            <li class="header__item ">
+                                <a href="#" class="header__item-link header__item--underline">Trang chủ</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://tocotocotea.com/history/" class="header__item-link">
+                                    Giới thiệu
+                                    <i class="fas fa-chevron-down header__item-icon"></i>
+                                </a>
+                                <ul class="header__nav-list">
+                                    <li class="header__nav-item">
+                                        <a href="https://tocotocotea.com/history/" class="header__nav-item-link">Lịch sử và sứ mệnh</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a href="https://tocotocotea.com/achievement/" class="header__nav-item-link">Thành tựu đạt được</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://tocotocotea.com/order/?source_id=web" class="header__item-link">
+                                    Sản phẩm
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://tocotocotea.com/category/blogs/" class="header__item-link">
+                                    Tin tức
+                                    <i class="fas fa-chevron-down header__item-icon"></i>
+                                </a>
+                                <ul class="header__nav-list">
+                                    <li class="header__nav-item">
+                                        <a href="https://tocotocotea.com/category/blogs/" class="header__nav-item-link">Tin tức khuyến mại</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a href="https://tocotocotea.com/category/blogs/" class="header__nav-item-link">Câu chuyện thương <br> hiệu</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a href="https://tocotocotea.com/category/blogs/" class="header__nav-item-link">Sự kiện</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://tocotocotea.com/stores/" class="header__item-link">Cửa hàng</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://v1.tocotocotea.com/pages/tuyen-dung" class="header__item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://v1.tocotocotea.com/pages/nhuong-quyen" class="header__item-link">Nhượng quyền</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__search">
+                        <i class="far fa-search header__search-icon"></i>
+                    </div>
+
+                    <input type="checkbox" id="mobile-input" name="" class="mobile-nav-input" hidden>
+                    <!-- Mobile menu bar -->
+                    <label for="mobile-input" class="header__mobile-menu">
+                        <i class="fas fa-bars header__mobile-icon"></i>
+                    </label>
+
+                    <!-- Mobile and Tablet menu -->
+                    <div class="header__mobile-nav">
+                        <label for="mobile-input" class="header__mobile-nav-close">
+                            Đóng
+                            <i class="far fa-times header__mobile-nav-icon"></i>
+                        </label>
+
+                        <ul class="header__mobile-content">
+                            <li class="header__mobile-content-item">
+                                <a href="#" class="header__mobile-content-link header__mobile--underline">Trang chủ</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://tocotocotea.com/history/" class="header__mobile-content-link">Giới thiệu</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://tocotocotea.com/order/?source_id=web" class="header__mobile-content-link">Sản phẩm</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://tocotocotea.com/category/blogs/" class="header__mobile-content-link">Tin tức</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://tocotocotea.com/stores/" class="header__mobile-content-link">Cửa hàng</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://v1.tocotocotea.com/pages/tuyen-dung" class="header__mobile-content-link">Tuyển dụng</a>
+                            </li>
+                            <li class="header__mobile-content-item">
+                                <a href="https://v1.tocotocotea.com/pages/nhuong-quyen" class="header__mobile-content-link">Nhượng quyền</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container__slider" style="background-image: url('./assets/img/toco-slider.jpg');">
+                <h3 class="container__slider-heading">ToCoToCo Tea</h3>
+                <div class="container__slider-title">
+                    Đậm vị thiên nhiên <br> Trọn vị hạnh phúc
+                </div>
+                <div class="container__slider-description">
+                    Với sứ mệnh mang lại niềm vui và hạnh phúc, TocoToco hy vọng sẽ tạo nên <br> một nét văn hóa giải trí bên cạnh ly trà sữa Ngon - sạch - tươi.
+                </div>
+                <div class="container__slider-btn">
+                    <a class="container__slider-btn-link" href="https://tocotocotea.com/order/?source_id=web">Đặt hàng ngay</a>
+                </div>
+                <div class="container__slider-scroll" style="background-image: url('./assets/img/scroll-mouse.webp');"></div>
+                <div class="container__slider-scrolldown">Cuộn xuống</div>
+                <div class="container__slider-overlay"></div>
+            </div>
+
+            <!-- Home product -->
+            <div class="section">
+                <div class="section__text1">ToCoToCo Menu</div>
+                <div class="section__text2">Sản phẩm nổi bật</div>
+                <div class="section__icon-bottom" style="background-image: url('./assets/img/icon-title-toco.webp');"></div>
+
+                <!-- Main product -->
+                <div class="row mt-50">
+                    <!-- Sua chua thanh long hat de -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/sua-chua-thanh-long-hat-de.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Sữa Chua Thanh Long Hạt Dẻ</h4>
+                            <p class="section__product-price">42,000đ</p>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=7800&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Song long bach ngoc -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/song-long-bach-ngoc.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Song Long Bạch Ngọc</h4>
+                            <p class="section__product-price">48,000đ</p>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=7794&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Sua chua dau tam hoang kim -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/sua-chua-dau-tam-hoang-kim.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Sữa Chua Dâu Tằm Hoàng Kim</h4>
+                            <p class="section__product-price">39,000đ</p>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=5144&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Sua chua dau tam hat de -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/sua-chua-dau-tam-hat-de-.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Sữa Chua Dâu Tằm Hạt Dẻ</h4>
+                            <p class="section__product-price">42,000đ</p>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=5140&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Sua chua trang -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/sua-chua-trang.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Sữa Chua Trắng</h4>
+                            <p class="section__product-price">32,000đ</p>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=5133&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Choco creamcake hat de -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                            <div class="section__product-discount">49%</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/choco-creamcake.png" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Choco Creamcake Hạt Dẻ</h4>
+                            <div class="section__product-origin-price">
+                                <p class="section__product-price">25,000đ</p>
+                                <p class="section__product-oldprice">49,000đ</p>
+                            </div>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=2323&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Ruby creamcake hat de -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                            <div class="section__product-discount">48%</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/ruby-creamcake-hat-de.jpg" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Ruby Creamcake Hạt Dẻ</h4>
+                            <div class="section__product-origin-price">
+                                <p class="section__product-price">25,000đ</p>
+                                <p class="section__product-oldprice">48,000đ</p>
+                            </div>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=1533&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+
+                    <!-- Chanh leo chan chau -->
+                    <div class="col section__product-detail">
+                        <div class="section__product-tagnew">
+                            <div class="section__product-tag">new</div>
+                            <div class="section__product-discount">36%</div>
+                        </div>
+                        <div class="section__product-main">
+                            <img src="./assets/img/chanh-leo-chan-chau.jpg" class="section__product-img">
+                        </div>
+                        <div class="section__product-content">
+                            <h4 class="section__product-heading">Chanh Leo Trân Châu Sương Mai</h4>
+                            <div class="section__product-origin-price">
+                                <p class="section__product-price">25,000đ</p>
+                                <p class="section__product-oldprice">39,000đ</p>
+                            </div>
+                            <a class="section__product-btn-link" href="https://tocotocotea.com/order/?product_id=1161&source_id=web">Đặt hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="section__product-showall" href="https://tocotocotea.com/order/?source_id=web">Xem tất cả</a>
+            </div>
+
+            <!-- About page -->
+            <div class="container__about">
+                <img src="./assets/img/banner_about_us.png" class="container__about-img">
+                <div class="container__about-content">
+                    <div class="container__about-title">
+                        <div class="container__about-text1">ToCoToCo Story</div>
+                        <div class="container__about-text2">Về chúng tôi</div>
+                        <div class="container__about-icon" style="background-image: url('./assets/img/icon-title-toco.webp')"></div>
+                    </div>
+                    <div class="container__about-description">
+                        Bên cạnh niềm tự hào về những ly trà sữa ngon - sạch - tươi, chúng tôi luôn tự tin mang đến khách hàng những trải nghiệm tốt nhất về dịch vụ và không gian.
+                    </div>
+                    <a href="https://tocotocotea.com/order/?source_id=web" class="container__about-btn">Xem thêm</a>
+                </div>
+            </div>
+
+            <!-- Franchise -->
+            <div class="container__franchise">
+                <div class="container__franchise-left">
+                    <div class="container__franchise-title">
+                        <div class="container__franchise-text1">ToCoToCo Franchise</div>
+                        <div class="container__franchise-text2">Nhượng quyền</div>
+                        <div class="container__franchise-icon" style="background-image: url('./assets/img/icon-title-toco.webp');"></div>
+                    </div>
+
+                    <div class="container__franchise-description">
+                        Gia nhập đế chế 300 TRIỆU USD. Nếu bạn bắt đầu kinh doanh khởi nghiệp ẩm thực, hoặc muốn đầu tư vào lĩnh vực này, thương hiệu TocoToco chắc chắn sẽ là một lựa chọn đáng cân nhắc cho bạn.
+                    </div>
+                    <a href="https://tocotocotea.com/order/?source_id=web" class="container__franchise-btn">Xem thêm</a>
+                </div>
+
+                <div class="container__franchise-right">
+                    <img src="./assets/img/img_home_franchise.png" class="container__franchise-right-img">
+                </div>
+            </div>
+
+            <!-- News -->
+            <div class="container__news">
+                <div class="container__news-title">
+                    <div class="container__news-text1">Tin Tức và Khuyến Mãi</div>
+                    <div class="container__news-text2">Khám phá tocotoco nhận ngay khuyến mãi</div>
+                    <div class="container__franchise-icon" style="background-image: url('./assets/img/icon-title-toco.webp')"></div>
+                </div>
+
+                <div class="container__news-content">
+                    <div class="col-half container__news-left">
+                        <a href="https://tocotocotea.com/blogs/cau-chuyen-thuong-hieu/tang-5000-ly-tra-sua-gop-suc-tuyen-dau-chong-dich-tocotoco/" class="container__news-left-link mr-8">
+                            <div class="container__news-left-card">
+                                <img src="./assets/img/5nganly.jpg" class="container__news-left-img">
+                            </div>
+                            <div class="container__news-info">
+                                <div class="container__news-info-title">
+                                    Vừa qua tocotoco trao tặng 5000 ly trà sữa "Góp sức tuyến đầu chống dịch"
+                                </div>
+                                <div class="container__news-info-des">
+                                    Với tình hình diễn biến phức tạp của dịch Covid 19 tại Hà Nội và Thành phố Hồ Chí <br> Minh, chứng kiến sự nổ lực không ngừng của đội ngũ [...]
+                                </div>
+                                <div class="container__news-info-btn">Xem thêm</div>
+                            </div>
+                        </a>
+
+                        <!-- Col half left -->
+                        <a href="https://tocotocotea.com/tin-tuc-hien-trang-chu/5000-ly-tra-sua-tocotoco-tuyen-dau-chong-dich/" class="card__news mr-8">
+                            <div class="card__news-img">
+                                <img src="./assets/img/gopsuctuyendau.jpg">
+                            </div>
+                            <div class="card__news-content">
+                                <div class="card__news-title">
+                                    Vừa qua 5000 ly trà sữa tocotoco <br> lan tỏa giá trị tốt đẹp trong <br> chương trình góp sức tuyến đầu <br> chống dịch covid 19
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Col half right -->
+                        <a href="https://tocotocotea.com/blogs/tocotoco-ha-noi-thong-bao-tam-dung-hoat-dong/" class="card__news ml-8">
+                            <div class="card__news-img">
+                                <img src="./assets/img/tamdunghoatdong.jpg">
+                            </div>
+                            <div class="card__news-content">
+                                <div class="card__news-title">
+                                    Tocotoco hà nội thông báo tạm <br> dừng hoạt động
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Toco mask left -->
+                        <a href="https://tocotocotea.com/khuyen-mai-mobile/co-gi-dac-biet-trong-bo-khau-trang-cuc-kool-tu-tocotoco/" class="card__news mr-8">
+                            <div class="card__news-img">
+                                <img src="./assets/img/maskcombo.png">
+                            </div>
+                            <div class="card__news-content">
+                                <div class="card__news-title">
+                                    Có gì đặt biệt trong bộ khẩu <br> trang cực kool từ tocotoco?
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Toco mask right -->
+                        <a href="https://tocotocotea.com/khuyen-mai-mobile/kool-mask-caring-is-sharing/" class="card__news ml-8">
+                            <div class="card__news-img">
+                                <img src="./assets/img/koolmask.png">
+                            </div>
+                            <div class="card__news-content">
+                                <div class="card__news-title">
+                                    Kool mask - caring is sharing
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container__news-right ml-8">
+                        <div class="container__news-home">
+                            <div class="container__news-right-video">
+                                <i class="far fa-play-circle container__news-right-icon" link="https://www.youtube.com/embed/8eHi2B2tQBs"></i>
+                                <img class="container__news-right-mainvid" src="./assets/img/conduongkhoinghiep.png"></img>
+                                <div class="container__news-right-title">
+                                    Con đường khởi nghiệp của người sáng lập thương hiệu <br> trà sữa việt nam - tocotoco
+                                </div>
+                            </div>
+
+                            <!-- Thương hiệu Châu Á -->
+                            <div class="container__news-section-video">
+                                <div class="container__section-video-home">
+                                    <i class="far fa-play-circle container__news-right-icon" link="https://www.youtube.com/embed/8eHi2B2tQBs"></i>
+                                    <img class="container__section-video-img" src="./assets/img/thuonghieuchaua.jpg"></img>
+                                </div>
+                                <div class="container__section-video-content">
+                                    ToCoToCo đạt top 10 thương hiệu Châu Á Thái Bình <br> Dương 2021
+                                </div>
+                            </div>
+
+                            <!-- Quan niệm trà sữa -->
+                            <div class="container__news-section-video">
+                                <div class="container__section-video-home">
+                                    <i class="far fa-play-circle container__news-right-icon" link="https://www.youtube.com/embed/8eHi2B2tQBs"></i>
+                                    <img class="container__section-video-img" src="./assets/img/quanniemtrasua.jpg"></img>
+                                </div>
+                                <div class="container__section-video-content">
+                                    ToCoToCo thay đổi quan niệm về nguyên liệu cho <br> nghành trà sữa Việt
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" style="background-image: url('./assets/img/footer-cover.png')">
+            <div class="footer__main">
+                <img class="footer__main-img" src="./assets/img/logo-footer.png">
+
+                <div class="footer__main1">
+                    <div class="footer__section-title">Công ty cp tm & dv Taco Việt Nam</div>
+                    <div class="footer__section-line">
+                        <i class="fas fa-map-marker footer__section-icon"></i>
+                        Tầng 2 tòa nhà T10, Times City Vĩnh Tuy, Hai Bà Trưng, Hà Nội.
+                    </div>
+                    <div class="footer__section-line">
+                        <i class="fas fa-phone footer__section-icon"></i>
+                        1900.63.69.36
+                    </div>
+                    <div class="footer__section-line">
+                        <i class="fas fa-envelope footer__section-icon"></i>
+                        info@tocotocotea.com
+                    </div>
+                    <div class="footer__section-line">Số ĐKKD: 0106341306. Ngày cấp: 16/03/2017.</div>
+                    <div class="footer__section-line">Nơi cấp: Sở kế hoạch và Đầu tư Thành phố Hà Nội.</div>
+                    <div class="footer__main-social">
+                        <a class="footer__main-social-link" href="">
+                            <i class="fab fa-facebook-square footer__main-icon"></i>
+                        </a>
+                        <a class="footer__main-social-link" href="">
+                            <i class="fab fa-instagram footer__main-icon"></i>
+                        </a>
+                        <a class="footer__main-social-link" href="">
+                            <i class="fab fa-youtube footer__main-icon"></i>
+                        </a>
+                        <a class="footer__main-social-link" href="">
+                            <i class="fab fa-twitter footer__main-icon"></i>
+                        </a>
+                        <a class="footer__main-social-link" href="">
+                            <i class="fab fa-google-plus footer__main-icon"></i>
+                        </a>
+                    </div>
+                    <div class="footer__main-download">
+                        <a href="https://play.google.com/store/apps/details?id=com.ipos.tocotoco" class="footer__download-link">
+                            <img class="footer__download-img" src="./assets/img/footer-ggplay.png"></img>
+                        </a>
+                        <a href="https://apps.apple.com/vn/app/tocotoco/id1249910346" class="footer__download-link">
+                            <img class="footer__download-img" src="./assets/img/footer-appstore.png"></img>
+                        </a>
+                        <a href="http://online.gov.vn/Home/WebDetails/57594" class="footer__download-link">
+                            <img class="footer__download-img" src="./assets/img/footer-bocongthuong.png"></img>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__main-policy">
+                    <div class="footer__policy-title">Về chúng tôi</div>
+                    <ul class="footer__policy-list">
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Giới thiệu về TocoToco</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Nhượng quyền</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Tin tức khuyến mại</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Cửa hàng</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Quy định chung</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">TT liên hệ & ĐKKD</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__main-policy">
+                    <div class="footer__policy-title">Chính sách</div>
+                    <ul class="footer__policy-list">
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Chính sách thành viên</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Hình thức thanh toán</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Vận chuyển giao nhận</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Đổi trả và hoàn tiền</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Bảo vệ thông tin cá nhân</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-item-link" href="">Bảo trì, bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__bottom-left">
+                        ToCoToCo - Thương hiệu trà sữa tiên phong sử dụng nguồn nông sản Việt Nam
+                    </div>
+                    <div class="footer__bottom-right">
+                        Copyrights © 2019 by ToCoToCoTea. All rights reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="footer__cover"></div>
+        </footer>
+
+        <a href="https://tocotocotea.com/order/" class="order">
+            <img class="order__img" src="./assets/img/order.webp">
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .mobile-input {
+        display: block;
+    }
+    .header {
+        max-height: 50.66px;
+    }
+
+    .header__nav {
+        padding: 12px 15px;
+    }
+
+    .header__menu-logo {
+        margin-left: 9px;
+    }
+
+    .header__logo-img {
+        width: 100px;
+        height: auto;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__mobile-menu {
+        display: block;
+        margin-right: 9px;
+    }
+    /*Mobile nav*/
+    .header__mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #292929c7;
+        border-left: 1px solid #f0f0f0;
+        width: 55vw;
+        z-index: 1000;
+        color: var(--tradition-color);
+        transform: translateX(100%);
+    }
+    
+    .header__mobile-nav-close {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 32px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .header__mobile-nav-icon {
+        margin-left: 4px;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    .header__mobile-content {
+        list-style: none;
+
+    }
+
+    .header__mobile-content-item {
+        margin: 0 25px;
+        padding: 8px 0;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .header__mobile--underline {
+        padding-bottom: 2px;
+        border-bottom: 2px solid var(--tradition-color);
+    }
+
+    .header__mobile-content-link {
+        text-decoration: none;
+        color: var(--tradition-color);
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+    }
+
+    .container__slider-heading,
+    .container__slider-description {
+        display: none;
+    }
+
+    .container__slider-title {
+        font-size: 34px !important;
+    }
+
+    .section {
+        padding-top: 50px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .container__about-content {
+        position: relative;
+        width: 85%;
+        margin: 32px 0 !important;
+    }
+
+    .container__franchise {
+        width: calc(100% - 30px) !important;
+        max-width: 708px;
+    }
+
+    .container__franchise-left {
+        width: 100%;
+        margin: 32px auto;
+        max-width: 566px;
+
+    }
+
+    .container__franchise-right {
+        display: none;
+    }
+
+    .container__news-left,
+    .container__news-right {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .container__news-left-link {
+        margin-right: 0 !important;
+    }
+
+    .footer__main {
+        max-width: 720px;
+    }
+
+    .footer__main-img,
+    .footer__main1,
+    .footer__main-policy {
+        width: 50%;
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        min-width: unset;
+    }
+
+    .footer__bottom-right,
+    .footer__bottom-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .section {
+        padding: 0 15px;
+    }
+
+    .section__product-tagnew {
+        width: 100%;
+    }
+
+    .section__product-content {
+        position: relative;
+        top: 0;
+    }
+
+    .section__product-detail {
+        width: calc(33.3333% - 30px) !important;
+    }
+
+    .container__about {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .container__news-content {
+        flex-wrap: wrap;
+        padding: 0 39px !important;
+    }
+
+    .footer__main-img {
+        height: 359.66px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .section__product-detail {
+        width: calc(50% - 30px) !important; 
+    }
+
+    .section__product-tagnew {
+        width: 86%;
+    }
+
+    .section__product-content {
+        transform: translateY(0);
+    }
+
+    .container__about {
+        flex-direction: column;
+        padding: 0 15px !important;
+    }
+
+    .container__franchise-description {
+        max-width: 315px !important;
+    }
+
+    .container__news-content {
+        flex-wrap: wrap;
+        padding: 0 15px !important;
+    }
+
+    .footer__main {
+        max-width: 414px !important;
+    }
+
+    .footer__main-img {
+        height: 207px;
+    }
+}
